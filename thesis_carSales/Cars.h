@@ -16,11 +16,11 @@ protected:
 		int saleYear;
 	};
 	Date saleDate;
-	std::string fullName;
+	std::string buyerFullName;
 public:
 	Cars();
 	Cars(std::string brand, int year, float price, std::string equipment,
-		std::string country, Date saleDate, std::string fullName);
+		std::string country, Date saleDate, std::string buyerFullName);
 
 	virtual ~Cars();
 	virtual void Print();

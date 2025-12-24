@@ -9,10 +9,10 @@ Cars::Cars()
 	equipment = "None";
 	country = "Undefined";
 	saleDate = { 0, 0, 0 };
-	fullName = "Undefined";
+	buyerFullName = "Undefined";
 }
 
-Cars::Cars(std::string brand, int year, float price, std::string equipment, std::string country, Date saleDate, std::string fullName)
+Cars::Cars(std::string brand, int year, float price, std::string equipment, std::string country, Date saleDate, std::string buyerFullName)
 {
 	this->brand = brand;
 	this->year = year;
@@ -20,7 +20,7 @@ Cars::Cars(std::string brand, int year, float price, std::string equipment, std:
 	this->equipment = equipment;
 	this->country = country;
 	this->saleDate = saleDate;
-	this->fullName = fullName;
+	this->buyerFullName = buyerFullName;
 }
 
 Cars::~Cars() {}
@@ -34,5 +34,5 @@ void Cars::Print()
 	std::cout << "Country: " << country << std::endl;;
 	std::cout << "Sale date: " << saleDate.saleDay << saleDate.saleMonth
 		<< saleDate.saleYear << std::endl;
-	std::cout << "Buyer: " << fullName << std::endl;
+	std::cout << "Buyer: " << buyerFullName << std::endl;
 }
