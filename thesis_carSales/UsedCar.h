@@ -14,6 +14,6 @@ public:
 		std::string country, Date saleDate, std::string buyerFullName,
 		std::string degreeOfPreservation, std::string ownerFullName, float mileage);
 
-	void Print() override;
+	void Print() const override;
 };
 

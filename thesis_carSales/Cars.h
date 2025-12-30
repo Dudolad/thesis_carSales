@@ -23,6 +23,15 @@ public:
 		std::string country, Date saleDate, std::string buyerFullName);
 
 	virtual ~Cars();
-	virtual void Print();
+	virtual void Print() const;
+
+	std::string getBrand() const; //search
+	int getYear() const; //filtration
+	float getPrice() const; //sort
+
+	void setYear(int year);
+	void setPrice(float price);
+
+
 };
 
