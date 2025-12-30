@@ -14,14 +14,9 @@ Cars::Cars()
 }
 
 Cars::Cars(std::string brand, int year, float price, std::string equipment, std::string country, Date saleDate, std::string buyerFullName)
+	:brand(brand), year(year), price(price), equipment(equipment), country(country),
+	saleDate(saleDate), buyerFullName(buyerFullName)
 {
-	this->brand = brand;
-	this->year = year;
-	this->price = price;
-	this->equipment = equipment;
-	this->country = country;
-	this->saleDate = saleDate;
-	this->buyerFullName = buyerFullName;
 }
 
 Cars::~Cars() {}
