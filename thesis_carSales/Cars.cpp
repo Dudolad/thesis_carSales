@@ -9,7 +9,7 @@ Cars::Cars()
 	price = 0.0;
 	equipment = "None";
 	country = "Undefined";
-	saleDate = { 0, 0, 0 };
+	saleDate = Date{ 0, 0, 0 };
 	buyerFullName = "Undefined";
 }
 
