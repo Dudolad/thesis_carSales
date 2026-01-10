@@ -124,12 +124,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cars.cpp" />
+    <ClCompile Include="SpecialVehicle.cpp" />
     <ClCompile Include="SportCar.cpp" />
     <ClCompile Include="thesis_carSales.cpp" />
     <ClCompile Include="UsedCar.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cars.h" />
+    <ClInclude Include="SpecialVehicle.h" />
     <ClInclude Include="SportCar.h" />
     <ClInclude Include="UsedCar.h" />
   </ItemGroup>

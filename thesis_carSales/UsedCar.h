@@ -6,7 +6,7 @@ class UsedCar
 	: public Cars
 {
 protected:
-	std::string degreeOfPreservation;
+	std::string degreeOfPreservation; //Ступінь збереження
 	std::string ownerFullName;
 	float mileage;
 public:
