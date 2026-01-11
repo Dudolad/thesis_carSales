@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CarManager.cpp" />
     <ClCompile Include="Cars.cpp" />
     <ClCompile Include="SpecialVehicle.cpp" />
     <ClCompile Include="SportCar.cpp" />
@@ -130,6 +131,7 @@
     <ClCompile Include="UsedCar.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CarManager.h" />
     <ClInclude Include="Cars.h" />
     <ClInclude Include="SpecialVehicle.h" />
     <ClInclude Include="SportCar.h" />
