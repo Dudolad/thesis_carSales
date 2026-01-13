@@ -50,6 +50,11 @@ float Cars::getPrice() const
 	return price;
 }
 
+std::string Cars::getType() const
+{
+	return "Cars";
+}
+
 void Cars::setYear(int year)
 {
 	if (year < 1886) //first car

@@ -28,6 +28,7 @@ public:
 	std::string getBrand() const; //search
 	int getYear() const; //filtration
 	float getPrice() const; //sort
+	virtual std::string getType() const;
 
 	void setYear(int year);
 	void setPrice(float price);

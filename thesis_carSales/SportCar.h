@@ -16,6 +16,7 @@ public:
     float getSekTo100km() const;
     float getDisplacement() const;
     int getEnginePower() const;
+    std::string getType() const override;
 
     void Print() const override;
 

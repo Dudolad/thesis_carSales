@@ -1,6 +1,9 @@
 #include "CarManager.h"
 #include <iostream>
 #include <algorithm>
+#include <fstream>
+#include <sstream>
+#include <stdexcept>
 
 CarManager::CarManager() {}
 
@@ -75,4 +78,12 @@ void CarManager::sortByPrice()
 		{
 			return a->getPrice() < b->getPrice();
 		});
+}
+
+void CarManager::saveToFile(const std::string& filename) const
+{
+}
+
+void CarManager::loadFromFile(const std::string& filename)
+{
 }

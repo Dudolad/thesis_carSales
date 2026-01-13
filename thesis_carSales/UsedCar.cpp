@@ -9,6 +9,11 @@ UsedCar::UsedCar(std::string brand, int year, float price, std::string equipment
 	setMileage(mileage);
 }
 
+std::string UsedCar::getType() const
+{
+	return "UsedCar";
+}
+
 void UsedCar::setMileage(float mileage)
 {
 	if(mileage < 0)

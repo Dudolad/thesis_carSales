@@ -29,6 +29,11 @@ int SportCar::getEnginePower() const
     return enginePower;
 }
 
+std::string SportCar::getType() const
+{
+    return "SportCar";
+}
+
 void SportCar::Print() const
 {
     Cars::Print(); 
