@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClInclude Include="CarManager.h" />
     <ClInclude Include="Cars.h" />
+    <ClInclude Include="Date.h" />
     <ClInclude Include="SpecialVehicle.h" />
     <ClInclude Include="SportCar.h" />
     <ClInclude Include="UsedCar.h" />

@@ -1,27 +1,28 @@
 #pragma once
 #include "Cars.h"
 #include <string>
+#include <stdexcept>
 #include <iostream>
 
-class SpecialVehicle :
-    public Cars
-{
-protected:
-    std::string vehicleCategory;
-    float weight;
-    float length, width, height;
-public:
-    SpecialVehicle(std::string brand, int year, float price, std::string equipment,
-        std::string country, Date saleDate, std::string buyerFullName,
-        std::string vehicleCategory, float weight, float length, float width, float height);
+namespace carshop {
 
-    std::string getVehicleCategory() const;
-    float getWeight() const;
-    float getLength() const;
-    float getWidth() const;
-    float getHeight() const;
-    std::string getType() const override;
+    class SpecialVehicle :
+        public Cars
+    {
+    protected:
+        std::string vehicleCategory;
+        float weight{};
+        float length{}, width{}, height{};
+    public:
+        SpecialVehicle() = default;
+        SpecialVehicle(const std::string& brand, int year, float price,
+            const std::string& equipment, const std::string& country, Date saleDate,
+            const std::string& buyerFullName, const std::string& vehicleCategory, float weight, float length, float width, float height);
 
-    void Print() const override;
-};
+        void save(std::ofstream& out) const override;
+        std::string getType() const override;
 
+        void show() const override;
+    };
+
+}

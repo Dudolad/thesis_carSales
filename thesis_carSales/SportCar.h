@@ -1,24 +1,26 @@
 #pragma once
 #include "Cars.h"
 #include <string>
-class SportCar :
-    public Cars
-{
-protected:
-    float sekTo100km;
-    float displacement;
-    int enginePower;
-public:
-    SportCar(std::string brand, int year, float price, std::string equipment,
-        std::string country, Date saleDate, std::string buyerFullName,
-        float sekTo100km, float displacement, int enginePower);
 
-    float getSekTo100km() const;
-    float getDisplacement() const;
-    int getEnginePower() const;
-    std::string getType() const override;
+namespace carshop {
 
-    void Print() const override;
+    class SportCar :
+        public Cars
+    {
+    protected:
+        float sekTo100km;
+        float displacement;
+        int enginePower;
+    public:
+        SportCar(const std::string& brand, int year, float price, const std::string& equipment,
+            const std::string& country, Date saleDate,const std::string& buyerFullName,
+            float sekTo100km, float displacement, int enginePower);
 
-};
+        
+        std::string getType() const override;
+        void show() const override;
+        void save(std::ofstream& out) const override;
 
+    };
+
+}

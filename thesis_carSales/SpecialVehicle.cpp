@@ -1,50 +1,48 @@
 #include "SpecialVehicle.h"
 #include <stdexcept>
+#include <fstream>
 
-SpecialVehicle::SpecialVehicle(std::string brand, int year, float price, std::string equipment, std::string country, Date saleDate, std::string buyerFullName, std::string vehicleCategory, float weight, float length, float width, float height)
-    : Cars(brand, year, price, equipment, country, saleDate, buyerFullName),
-    vehicleCategory(vehicleCategory), weight(weight), length(length), width(width), height(height)
-{
-    if (weight <= 0) throw std::invalid_argument("Weight must be positive");
-    if (length <= 0 || width <= 0 || height <= 0)
-        throw std::invalid_argument("All dimensions must be positive");
-}
 
-std::string SpecialVehicle::getVehicleCategory() const
-{
-    return vehicleCategory;
-}
+namespace carshop {
 
-float SpecialVehicle::getWeight() const
-{
-    return weight;
-}
+    SpecialVehicle::SpecialVehicle(const std::string& brand, int year, float price,
+        const std::string& equipment, const std::string& country, Date saleDate,
+        const std::string& buyerFullName,const std::string& vehicleCategory, float weight, float length, float width, float height)
+        : Cars(brand, year, price, equipment, country, saleDate, buyerFullName),
+        vehicleCategory(vehicleCategory), weight(weight), length(length), width(width), height(height)
+    {
+        if (weight <= 0) throw std::invalid_argument("Weight must be positive");
+        if (length <= 0 || width <= 0 || height <= 0)
+            throw std::invalid_argument("All dimensions must be positive");
+    }
 
-float SpecialVehicle::getLength() const
-{
-    return length;
-}
 
-float SpecialVehicle::getWidth() const
-{
-    return width;
-}
+    std::string SpecialVehicle::getType() const
+    {
+        return "SpecialVehicle";
+    }
 
-float SpecialVehicle::getHeight() const
-{
-    return height;
-}
+    void SpecialVehicle::show() const
+    {
+        Cars::show();
+        std::cout << "Type: " << vehicleCategory 
+                  << "Weight: " << weight << " kg"
+        << "Dimensions (L x W x H): " << length << " * " << width << " * " << height << " m" << std::endl;
+    }
 
-std::string SpecialVehicle::getType() const
-{
-    return "SpecialVehicle";
-}
-
-void SpecialVehicle::Print() const
-{
-    Cars::Print();
-    std::cout << "Type: " << vehicleCategory << std::endl;
-    std::cout << "Weight: " << weight << " kg" << std::endl;
-    std::cout << "Dimensions (L x W x H): "
-        << length << " * " << width << " * " << height << " m" << std::endl;
+    void SpecialVehicle::save(std::ofstream& out) const {
+        out << getType() << "\n"
+            << brand << "\n"
+            << year << "\n"
+            << price << "\n"
+            << equipment << "\n"
+            << country << "\n"
+            << saleDate.day << " " << saleDate.month << " " << saleDate.year << "\n"
+            << buyerFullName << "\n"
+            << vehicleCategory << "\n"
+            << weight << "\n"
+            << length << "\n"
+            << width << "\n"
+            << height << "\n";
+    }
 }
