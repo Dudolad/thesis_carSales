@@ -12,7 +12,7 @@ namespace carshop {
         if (!car)
             throw std::invalid_argument("Null pointer passed to addCar");
 
-        cars.push_back(std::move(car));
+        cars.push_back(car);
     }
 
     void CarManager::removeByBrand(const std::string& brand)
