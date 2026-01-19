@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="carshop::CarManager" Collapsed="true">
+    <Position X="10" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAgAAAAAAAgAgAAAAAAAACAAUIAAAEEQ=</HashCode>
+      <FileName>CarManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="carshop::Cars" Collapsed="true">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEFAAACAACAAAAAAAAAABAAAQAUQAACBAAgAIQAAAA=</HashCode>
+      <FileName>Cars.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="carshop::SpecialVehicle" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAYEAAAAAAgQAAAAAgBAAAAAAAAAA=</HashCode>
+      <FileName>SpecialVehicle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="carshop::SportCar" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAACAQAAAAAAQBAAAAQAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>SportCar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="carshop::UsedCar" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAAAAAAAAAAwAAACAABAAAAAACAAA=</HashCode>
+      <FileName>UsedCar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="carshop::Date" Collapsed="true">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Date.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
